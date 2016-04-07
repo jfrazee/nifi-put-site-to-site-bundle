@@ -213,6 +213,7 @@ public class PutSiteToSite extends AbstractProcessor {
         }
         catch (Exception e) {
           getLogger().error("Site-to-site transfer to {} at {} failed for FlowFile {}", new Object[]{remoteInputPort, remoteUrl, flowFile}, e);
+          flowFile = session.penalize(flowFile);
           session.transfer(flowFile, REL_FAILURE);
           return;
         }
