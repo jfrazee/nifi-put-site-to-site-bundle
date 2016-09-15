@@ -19,7 +19,7 @@
     <parent>
         <groupId>com.joeyfrazee.nifi</groupId>
         <artifactId>nifi-put-site-to-site-bundle</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1</version>
     </parent>
 
     <artifactId>nifi-put-site-to-site-processors</artifactId>
